@@ -2,13 +2,14 @@
 
 .header {
     &__wrapper {
-        padding: 1rem 0;
+        padding: 2.5rem 0;
         margin-bottom: 1rem;
         @include flex(space-between, center);
         button {
             font-size: 2rem;
             border: none;
             background: transparent;
+            color: $clr-dark;
         }
 
         ul.open {
@@ -35,7 +36,6 @@
                         font-size: 1.6rem !important;
                     }
                 }
-    
             }
     
             position: fixed;
@@ -55,8 +55,13 @@
                     text-align: center;
                     a {
                         font-size: 3rem;
-                    }
+                    } 
                 }
+
+                li:hover {
+                    font-weight: bolder;
+                    text-decoration: underline;
+                }  
         }
     }
 }

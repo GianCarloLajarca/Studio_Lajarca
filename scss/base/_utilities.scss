@@ -62,6 +62,8 @@ $alignments: left, center, right, justify;
         font-size: #{$i}rem;
     }
 
+
+
 }
 
 $width: (
@@ -100,3 +102,21 @@ $align: (
        align-items: #{$val};
     }
 }
+
+// OWN UTILITIES START
+$weights: bold, bolder;
+@each $weight in $weights {
+    .weight-#{$weight} {
+        font-weight: #{$weight};
+    }
+}
+
+$decorations: underline, dashed, dotted, double, overline, wavy, solid,;
+@each $decoration in $decorations {
+    .decoration-#{$decoration} {
+        text-decoration: #{$decoration};
+    }
+}
+
+// OWN UTILITIES END
+
